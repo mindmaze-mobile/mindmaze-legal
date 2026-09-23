@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MindMaze</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f6f5f2;
+        --fg: #1c1b19;
+        --muted: #5c5a56;
+        --line: #d8d5ce;
+        --link: #1a4a6e;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #161514;
+          --fg: #eceae6;
+          --muted: #a7a49c;
+          --line: #3a3834;
+          --link: #9ec0dc;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: Georgia, "Times New Roman", Times, serif;
+        line-height: 1.6;
+      }
+
+      main {
+        max-width: 40rem;
+        margin: 0 auto;
+        padding: 3rem 1.25rem 4rem;
+      }
+
+      .brand {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0.85rem 0 0;
+        font-size: 1.85rem;
+        font-weight: 500;
+        letter-spacing: -0.02em;
+        line-height: 1.25;
+      }
+
+      .tagline {
+        margin: 0.75rem 0 0;
+        color: var(--muted);
+        font-style: italic;
+      }
+
+      hr {
+        border: 0;
+        border-top: 1px solid var(--line);
+        margin: 2rem 0;
+      }
+
+      p {
+        margin: 0 0 1rem;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      li + li {
+        margin-top: 0.65rem;
+      }
+
+      a {
+        color: var(--link);
+      }
+
+      footer {
+        margin-top: 3rem;
+        color: var(--muted);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 0.85rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="brand">MindMaze</div>
+      <h1>Legal</h1>
+      <p class="tagline">The deeper you go, the more you discover.</p>
+      <hr />
+      <p>
+        These pages describe how MindMaze handles information and related legal
+        matters.
+      </p>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+      <footer>© 2026 MindMaze</footer>
+    </main>
+  </body>
+</html>

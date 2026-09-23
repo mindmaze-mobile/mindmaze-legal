@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — MindMaze</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f6f5f2;
+        --fg: #1c1b19;
+        --muted: #5c5a56;
+        --line: #d8d5ce;
+        --link: #1a4a6e;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #161514;
+          --fg: #eceae6;
+          --muted: #a7a49c;
+          --line: #3a3834;
+          --link: #9ec0dc;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: Georgia, "Times New Roman", Times, serif;
+        line-height: 1.65;
+      }
+
+      main {
+        max-width: 40rem;
+        margin: 0 auto;
+        padding: 3rem 1.25rem 4rem;
+      }
+
+      .brand {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0.85rem 0 0;
+        font-size: 1.85rem;
+        font-weight: 500;
+        letter-spacing: -0.02em;
+        line-height: 1.25;
+      }
+
+      .tagline,
+      .updated,
+      .nav {
+        color: var(--muted);
+      }
+
+      .tagline {
+        margin: 0.75rem 0 0;
+        font-style: italic;
+      }
+
+      .updated {
+        margin: 0.5rem 0 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 0.9rem;
+      }
+
+      .nav {
+        margin: 0.85rem 0 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 0.9rem;
+      }
+
+      hr {
+        border: 0;
+        border-top: 1px solid var(--line);
+        margin: 2rem 0;
+      }
+
+      h2 {
+        margin: 2rem 0 0.7rem;
+        font-size: 1.15rem;
+        font-weight: 600;
+      }
+
+      p,
+      ul {
+        margin: 0 0 1rem;
+      }
+
+      ul {
+        padding-left: 1.2rem;
+      }
+
+      li + li {
+        margin-top: 0.35rem;
+      }
+
+      a {
+        color: var(--link);
+      }
+
+      footer {
+        margin-top: 3rem;
+        color: var(--muted);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 0.85rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="brand">MindMaze</div>
+      <h1>Privacy Policy</h1>
+      <p class="tagline">The deeper you go, the more you discover.</p>
+      <p class="updated">Last Updated: September 23, 2026</p>
+      <p class="nav"><a href="index.html">Back to MindMaze</a></p>
+      <hr />
+
+      <p>
+        This Privacy Policy describes how MindMaze (“MindMaze,” “we,” “us,” or
+        “our”) collects, uses, and shares information when you use the MindMaze
+        mobile application and related services (the “Service”).
+      </p>
+      <p>
+        MindMaze is an anonymous-style social app for sharing Thoughts and
+        Wishes. Other people may see the content you post together with an
+        Anonymous ID. That is not a guarantee of complete anonymity.
+      </p>
+
+      <h2>1. Who we are</h2>
+      <p>
+        MindMaze is operated by an independent developer. For privacy questions,
+        contact <a href="mailto:mindmaze.support@gmail.com">mindmaze.support@gmail.com</a>.
+      </p>
+
+      <h2>2. Information we collect</h2>
+
+      <h2>2.1 Google Sign-In and authentication</h2>
+      <p>
+        You sign in with Google through Supabase Auth. We do not operate a
+        separate username-and-password account system.
+      </p>
+      <p>
+        Supabase Auth stores Google-derived account metadata associated with
+        your sign-in. That metadata currently includes email, name, full_name,
+        avatar_url, picture, and Google’s user identifier (sub), together with
+        the Supabase Auth user ID assigned to your account.
+      </p>
+      <p>
+        The MindMaze app uses the Supabase Auth UUID as your account identifier
+        inside the Service (including to load your profile and as the RevenueCat
+        App User ID). The app does not copy your Google name, email, or profile
+        photo into MindMaze profile records, and it does not show those Google
+        details to other users on posts or public profile surfaces.
+      </p>
+      <p>
+        Session tokens issued by Supabase are stored on your device so you can
+        stay signed in. MindMaze does not store Google access tokens or Google
+        refresh tokens in its own application database.
+      </p>
+
+      <h2>2.2 Profile information you provide</h2>
+      <p>
+        After sign-in, you create a MindMaze profile. We store information such
+        as:
+      </p>
+      <ul>
+        <li>Anonymous ID (display_id), which other users may see</li>
+        <li>Gender, used for Wish matching</li>
+        <li>Date of birth</li>
+        <li>Timezone, used for local daily posting limits</li>
+        <li>Account status (for example, active, suspended, or banned)</li>
+      </ul>
+      <p>
+        Google name, email, and avatar are not copied into this profile record.
+      </p>
+      <p>
+        MindMaze does not currently impose its own 18+ registration restriction
+        in the app. Date of birth is collected as profile information and is not
+        used as an in-app age gate at this time.
+      </p>
+
+      <h2>2.3 Content and activity</h2>
+      <p>When you use the Service, we process:</p>
+      <ul>
+        <li>Thoughts and Wishes you post (text, mode, and related metadata)</li>
+        <li>Delivery records when a post is shown to you (views)</li>
+        <li>Ratings you submit on posts you were shown</li>
+        <li>Reports you submit, including reason and optional detail</li>
+        <li>Blocks you create or that affect Explore visibility</li>
+      </ul>
+      <p>
+        Other users who receive your post may see the post text and your
+        Anonymous ID. They do not see your Google name, email, or profile photo
+        through MindMaze.
+      </p>
+
+      <h2>2.4 Purchases</h2>
+      <p>
+        Optional MindMaze Premium subscriptions are processed by Apple through
+        RevenueCat. We use your Supabase Auth UUID as the RevenueCat App User
+        ID. MindMaze does not store full payment card numbers. Apple and
+        RevenueCat process purchase and entitlement information according to
+        their own policies.
+      </p>
+
+      <h2>2.5 Safety and moderation</h2>
+      <p>
+        Posts may be checked by an automated Safety Filter. Some content is
+        blocked from being posted. Other content may be flagged for internal
+        review. A flag or a user report does not by itself automatically punish
+        an account. Human moderation may hide a post or suspend or ban an
+        account. We keep internal safety flags, reports, and operator audit
+        records as needed to review and act on harm.
+      </p>
+
+      <h2>2.6 Device information</h2>
+      <p>
+        We read the IANA timezone from your device and store it on your profile
+        so daily posting limits follow your local calendar day. MindMaze does
+        not currently use location data for advertising. This section describes
+        current behavior and is not a promise about future features.
+      </p>
+
+      <h2>3. How we use information</h2>
+      <p>We use the information above to:</p>
+      <ul>
+        <li>Create and authenticate your account</li>
+        <li>Operate posting, Explore, rating, History, Status, and blocking</li>
+        <li>Match Wishes using gender information as implemented in the Service</li>
+        <li>Provide Premium features when your purchase is active</li>
+        <li>Review reports and safety flags, and take human moderation actions</li>
+        <li>Maintain the Service, prevent abuse, and comply with law</li>
+      </ul>
+
+      <h2>4. How we share information</h2>
+      <p>We share information in these ways:</p>
+      <ul>
+        <li>
+          <strong>Other users.</strong> Post text and Anonymous ID may be shown
+          to people who receive your posts. Ratings are not shown as another
+          person’s identity.
+        </li>
+        <li>
+          <strong>Service providers.</strong> We use service providers such as
+          Google, Supabase, Apple, and RevenueCat to provide authentication,
+          backend infrastructure, App Store purchases, and subscription
+          management. Google is used for Sign-In. Supabase is used for
+          authentication and application data. Apple processes App Store
+          purchases. RevenueCat is used for subscription and entitlement
+          management, with your Supabase Auth UUID as the RevenueCat App User
+          ID.
+        </li>
+        <li>
+          <strong>Legal and safety.</strong> We may disclose information if
+          required by law or to address serious safety issues.
+        </li>
+      </ul>
+
+      <h2>5. Anonymity</h2>
+      <p>
+        MindMaze is designed so that other users see an Anonymous ID rather than
+        your Google name or email. You should not treat that as complete
+        anonymity. Your Anonymous ID can appear next to content you post. You
+        should not include information in a post that you do not want others to
+        see.
+      </p>
+
+      <h2>6. Account deletion</h2>
+      <p>
+        You can delete your MindMaze account from inside the app. Account
+        deletion deletes related MindMaze account and content data associated
+        with that account, subject to the following:
+      </p>
+      <ul>
+        <li>
+          Some records needed for system integrity (for example, ratings left on
+          other people’s posts, or certain billing/event records) may be retained
+          in anonymized form.
+        </li>
+        <li>
+          Deleting your MindMaze account does not automatically cancel an App
+          Store subscription. Manage or cancel Premium through your Apple ID
+          subscription settings.
+        </li>
+      </ul>
+
+      <h2>7. Retention</h2>
+      <p>
+        We retain information for as long as reasonably necessary to operate
+        MindMaze, maintain safety and integrity, comply with applicable
+        obligations, and resolve disputes. Different categories of information
+        may be retained for different periods depending on their purpose. After
+        account deletion, some records needed for system integrity, safety or
+        legal obligations, or subscription processing by Apple or RevenueCat
+        may remain in anonymized or provider-held form, as described in
+        Account deletion.
+      </p>
+
+      <h2>8. Children</h2>
+      <p>
+        MindMaze currently does not impose its own 18+ registration restriction.
+        Date of birth is collected during profile setup, but the app does not
+        currently use it as an in-app age gate. Users must comply with applicable
+        laws, platform requirements, and the Terms of Use. Age-related
+        requirements may be changed where necessary.
+      </p>
+
+      <h2>9. International processing</h2>
+      <p>
+        MindMaze uses third-party service providers that may process or store
+        information in countries or regions other than where you live. Their
+        processing is subject to their respective privacy policies and
+        applicable law.
+      </p>
+
+      <h2>10. Changes</h2>
+      <p>
+        We may update this Privacy Policy when the Service, our data practices,
+        or applicable requirements change. When we do, we will update the Last
+        Updated date on this page. We may also provide additional notice where
+        we consider it appropriate.
+      </p>
+
+      <h2>11. Contact</h2>
+      <p>
+        For privacy requests or questions about this policy, email
+        <a href="mailto:mindmaze.support@gmail.com">mindmaze.support@gmail.com</a>.
+      </p>
+
+      <p class="nav"><a href="index.html">Back to MindMaze</a></p>
+      <footer>© 2026 MindMaze</footer>
+    </main>
+  </body>
+</html>
