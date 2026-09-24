@@ -123,7 +123,7 @@
       <div class="brand">MindMaze</div>
       <h1>Privacy Policy</h1>
       <p class="tagline">The deeper you go, the more you discover.</p>
-      <p class="updated">Last Updated: September 23, 2026</p>
+      <p class="updated">Last Updated: September 24, 2026</p>
       <p class="nav"><a href="index.html">Back to MindMaze</a></p>
       <hr />
 
@@ -146,27 +146,32 @@
 
       <h2>2. Information we collect</h2>
 
-      <h2>2.1 Google Sign-In and authentication</h2>
+      <h2>2.1 Sign-in and authentication</h2>
       <p>
-        You sign in with Google through Supabase Auth. We do not operate a
-        separate username-and-password account system.
+        You sign in with Google Sign-In or Sign in with Apple through Supabase
+        Auth. We do not operate a separate username-and-password account system.
       </p>
       <p>
-        Supabase Auth stores Google-derived account metadata associated with
-        your sign-in. That metadata currently includes email, name, full_name,
-        avatar_url, picture, and Google’s user identifier (sub), together with
-        the Supabase Auth user ID assigned to your account.
+        Supabase Auth stores account metadata associated with the sign-in
+        provider you use, together with the Supabase Auth user ID assigned to
+        your account. For Google Sign-In, that metadata currently includes
+        email, name, full_name, avatar_url, picture, and Google’s user
+        identifier (sub). For Sign in with Apple, that metadata may include an
+        email address and Apple’s user identifier. If you choose Hide My Email,
+        Apple may provide a private relay email address instead of your personal
+        email. Apple may also provide a name if you share it with the app; the
+        MindMaze app does not use that name in profiles or posts.
       </p>
       <p>
         The MindMaze app uses the Supabase Auth UUID as your account identifier
         inside the Service (including to load your profile and as the RevenueCat
-        App User ID). The app does not copy your Google name, email, or profile
-        photo into MindMaze profile records, and it does not show those Google
+        App User ID). The app does not copy your sign-in name, email, or profile
+        photo into MindMaze profile records, and it does not show those provider
         details to other users on posts or public profile surfaces.
       </p>
       <p>
         Session tokens issued by Supabase are stored on your device so you can
-        stay signed in. MindMaze does not store Google access tokens or Google
+        stay signed in. MindMaze does not store Google or Apple access tokens or
         refresh tokens in its own application database.
       </p>
 
@@ -183,7 +188,8 @@
         <li>Account status (for example, active, suspended, or banned)</li>
       </ul>
       <p>
-        Google name, email, and avatar are not copied into this profile record.
+        Sign-in name, email, and avatar from Google or Apple are not copied into
+        this profile record.
       </p>
       <p>
         MindMaze does not currently impose its own 18+ registration restriction
@@ -202,8 +208,8 @@
       </ul>
       <p>
         Other users who receive your post may see the post text and your
-        Anonymous ID. They do not see your Google name, email, or profile photo
-        through MindMaze.
+        Anonymous ID. They do not see your Google or Apple name, email, or
+        profile photo through MindMaze.
       </p>
 
       <h2>2.4 Purchases</h2>
@@ -256,11 +262,11 @@
           <strong>Service providers.</strong> We use service providers such as
           Google, Supabase, Apple, and RevenueCat to provide authentication,
           backend infrastructure, App Store purchases, and subscription
-          management. Google is used for Sign-In. Supabase is used for
-          authentication and application data. Apple processes App Store
-          purchases. RevenueCat is used for subscription and entitlement
-          management, with your Supabase Auth UUID as the RevenueCat App User
-          ID.
+          management. Google Sign-In and Sign in with Apple are used for
+          sign-in. Supabase is used for authentication and application data.
+          Apple also processes App Store purchases. RevenueCat is used for
+          subscription and entitlement management, with your Supabase Auth UUID
+          as the RevenueCat App User ID.
         </li>
         <li>
           <strong>Legal and safety.</strong> We may disclose information if
@@ -271,7 +277,7 @@
       <h2>5. Anonymity</h2>
       <p>
         MindMaze is designed so that other users see an Anonymous ID rather than
-        your Google name or email. You should not treat that as complete
+        your Google or Apple name or email. You should not treat that as complete
         anonymity. Your Anonymous ID can appear next to content you post. You
         should not include information in a post that you do not want others to
         see.
